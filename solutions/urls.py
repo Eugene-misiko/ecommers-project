@@ -35,6 +35,7 @@ urlpatterns = [
     path("api/users/", include('users.urls')),
     path("api/cart/", include('cart.urls')),
     path("", include('cart.urls')),
+    #
     path("api/v1/products/", include(('products.urls', 'v1'),namespace= 'v1')),#Added/
     path("api/orders/", include('orders.urls')),
     path("", include('orders.urls')),
